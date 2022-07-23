@@ -2,8 +2,6 @@
 function buscaCep(){
     var cep = document.getElementById("entrada").value;
     var url = "https://viacep.com.br/ws/" + cep + "/json/";
-    console.log(url);
-    console.log(cep);
     $.ajax({
         url: url,
         type: "GET",
